@@ -1,0 +1,16 @@
+{
+  "contacts": [
+    {
+      "firstName": "Алмазбек",
+      "lastName": "Атамбаев",
+      "phoneNumber": "0700123456",
+      "id": 1
+    },
+    {
+      "firstName": "Сооронбай",
+      "lastName": "Жээнбеков",
+      "phoneNumber": "0700123456",
+      "id": 2
+    }
+  ]
+}

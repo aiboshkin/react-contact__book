@@ -1,38 +1,106 @@
-.App {
+.contactBook {
+  height: 100vh;
+  width: 100%;
+  background: url(./components/img/bg.jpg);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.list {
+  margin: 3rem;
+  padding: 0 2rem 2rem 2rem;
+  background-color: silver;
+  border-radius: 5px;
+  box-shadow: 0 2px 7px rgb(0, 71, 71);
+  text-shadow: 0 1px 5px rgb(116, 116, 116);
+  color: rgb(20, 20, 20);
+}
+.empty-list {
+  background: silver;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 2px 7px rgb(0, 71, 71);
+  text-shadow: 0 1px 5px rgb(116, 116, 116);
+  color: rgb(20, 20, 20);
+}
+.card {
+  list-style: none;
+  padding: 1rem 0;
+  border-bottom: 1px solid black;
   text-align: center;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.contact-title {
+  border: 1px solid #333;
+  border-radius: 5px;
+  padding: 5px 0;
+  margin-bottom: 5px;
+  font-weight: 500;
+  box-shadow: 0 1px 3px rgb(88, 88, 88);
+  background: rgb(185, 185, 185)
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+button {
+  border: none;
+  border-radius: 4px;
+  padding: 5px;
+  margin: 10px 5px -3px 5px;
+  background: rgb(10, 175, 10);
+  color: rgb(212, 225, 236);
+  box-shadow: 0 1px 3px rgb(0, 71, 71);
+  cursor: pointer;
+  transition: .5s;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+button:hover {
+  background: rgb(7, 158, 7);
+}
+.add-contact {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  background-color: silver;
+  padding: 1.5rem;
+  border-radius: 5px;
+  box-shadow: 0 2px 7px rgb(0, 71, 71);
+  text-shadow: 0 1px 5px rgb(116, 116, 116);
+  color: rgb(20, 20, 20);
+  margin: 20px auto;
+  z-index: 1;
 }
-
-.App-link {
-  color: #61dafb;
+input {
+  border: none;
+  border-radius: 5px;
+  padding: 5px;
+  margin: 5px auto;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+}
+.nav-bar {
+  position: fixed;
+  margin: 0 auto;
+  width: 100%;
+}
+.nav-bar > ul {
+  width: 70%;
+  margin: 0 auto;
+  list-style-type: none;
+  display: flex;
+  justify-content: flex-end;
+}
+.nav-bar > ul > li {
+  margin: 2rem 0 0 2rem;
+  background-color: rgb(192, 192, 192);
+  padding: 5px;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgb(0, 71, 71);
+  transition: .3s;
+}
+.nav-bar li:hover {
+  background-color: rgb(219, 219, 219);
+}
+.nav-bar a {
+  text-decoration: none;
+  color: rgb(61, 61, 61);
+  text-transform: uppercase;
+  font-weight: 500;
 }
